@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(TestBoostFindPackage)
 
 # 查找 Boost 的 system 和 filesystem 组件
-find_package(Boost REQUIRED COMPONENTS system filesystem)
+find_package(Boost REQUIRED COMPONENTS system filesystem NO_MODULE)
 
 # 打印找到的变量
 message(STATUS "Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}")
