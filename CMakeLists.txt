@@ -11,10 +11,10 @@ message(STATUS "Eigen3_FILESYSTEM_FOUND: ${Eigen3_FILESYSTEM_FOUND}")
 message(STATUS "CMake Module Path1: ${CMAKE_MODULE_PATH}")
 
 # 查找 Boost 的 system 和 filesystem 组件
-find_package(Boost REQUIRED COMPONENTS system filesystem NO_MODULE)
+FIND_PACKAGE(Boost REQUIRED COMPONENTS system filesystem NO_MODULE)
 
 # 打印找到的变量
-message(STATUS "Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}")
+MESSAGE(STATUS "Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}")
 message(STATUS "Boost_LIBRARIES: ${Boost_LIBRARIES}")
 message(STATUS "Boost_SYSTEM_FOUND: ${Boost_SYSTEM_FOUND}")
 message(STATUS "Boost_FILESYSTEM_FOUND: ${Boost_FILESYSTEM_FOUND}")
