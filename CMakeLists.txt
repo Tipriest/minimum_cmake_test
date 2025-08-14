@@ -2,6 +2,13 @@ cmake_minimum_required(VERSION 3.10)
 project(TestBoostFindPackage)
 
 find_package(Eigen3 REQUIRED NO_MODULE)
+# messages
+message(STATUS "Configuring project...")
+message(WARNING "This feature is deprecated.")
+message(AUTHOR_WARNING "Consider refactoring this module.")
+message(SEND_ERROR "An error occurred during configuration.")
+message(FATAL_ERROR "Critical configuration error: missing required variable.")
+
 
 # 打印找到的变量
 message(STATUS "Eigen3_INCLUDE_DIRS: ${Eigen3_INCLUDE_DIRS}")
